@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="Dice Roller Style Sheet.css">
+
+<center>
+<h1>D&D Stats Randomizer</h1>
+<button onclick="myFunction()">Roll Character Stats</button>
+<p id="statsResult"></p>
+</center>
+
+<script>
+function myFunction() {
+    var input = prompt("Enter # Rolls(X) and # Sides(Y) in the format \"XdY\"", "3d6");
+    var splitArray = input.split("d");
+    var min = 1, randomNumbers = "", num, total = 0;
+    for (var i = 0; i < splitArray[0]; i++) {
+        num = Math.floor(Math.random() * splitArray[1]) + min;
+        total += num;
+        randomNumbers = randomNumbers + num + " ";
+    }
+        document.getElementById("statsResult").innerHTML = randomNumbers + ": " + total;
+}
+</script>
+</body>
+</html>
