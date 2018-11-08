@@ -1,0 +1,19 @@
+body {
+    background-image: url(dungeons.jpg);
+    /*background-color: rgb(80, 235, 255);*/
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1cm
+}
+p {
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-size: 300%
+}
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 0, 245);
+    block-size: 2cm;
+    font-size: 0.5cm;
+}
